@@ -1,0 +1,17 @@
+package com.product;
+
+import com.chenyf.drools.fact.Product;
+  
+rule "rule1"  
+    when  
+        p : Product(type == "diamond");  
+    then  
+        p.setDiscount(10);
+end  
+  
+rule "rule2"  
+    when  
+        p : Product(type == "gold");
+    then  
+        p.setDiscount(15);
+end

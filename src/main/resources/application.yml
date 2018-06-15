@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.drools: trace
+    com.chenyf: trace
